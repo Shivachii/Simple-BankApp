@@ -1,0 +1,56 @@
+<main >
+    <div class="relative bg-slate-300 p-20 m-20">
+        <h1 class="text-purple-800 font-semibold text-xl text-center">
+            WELCOME TO OUR BANK
+        </h1>
+        <p class="text-purple-800 text-lg text-center">Join us in your financial journey</p>
+        <div class="bg-slate-200 grid grid-cols-2 p-10 m-5 rounded-md shadow-lg ">
+            <div class=" mt-10 ">
+                <img src="/assets/images/stack.jpg" alt="" width="500px" height="500px">
+                
+                <p class="text-center m-2">Already have an account? <a href="login" class="font-semibold text-purple-800 hover:underline underline-offset-4 decoration-purple-800 cursor-pointer">Log in</a> </p>
+
+            </div>
+            <form action="" class="ml-4">
+                <label class="block ">
+                    <span class="block text-sm font-medium text-slate-700">Full Name *</span>
+                    <input type="text" class="peer w-[300px]  p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" placeholder="John Doe"/>
+                    
+                </label>
+                <label class="block ">
+                    <span class="block text-sm font-medium text-slate-700 mt-2">Email *</span>
+                    <input type="email" class="peer w-[300px] p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" placeholder="JohnDoe@gmail.com"/>
+                    <p class="invisible peer-invalid:visible text-pink-600 text-sm">
+                      Please provide a valid email address.
+                    </p>
+                </label>
+                <label class="block ">
+                    <span class="block text-sm font-medium text-slate-700">Username *</span>
+                    <input type="text" class="peer w-[300px] p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" maxlength="15" required/>
+                    
+                </label>
+                <label class="block ">
+                    <span class="block text-sm font-medium text-slate-700 mt-1">Password *</span>
+                    <input type="password" class="peer w-[300px] p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" maxlength="8" minlength="4"/>
+                    <p class=" invisible peer-invalid:visible text-pink-600 text-sm">
+                      Password must be 8 characters long and have one special character.
+                    </p>
+                </label>
+                <label class="block">
+                    <span class="block text-sm font-medium text-slate-700">Confrim Password *</span>
+                    <input type="password" class="peer w-[300px] p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" maxlength="8" minlength="4" />
+                    <p class=" invisible peer-invalid:visible text-pink-600 text-sm">
+                        Password must be 8 characters long and have one special character.
+                    </p>
+                </label>
+                <div class="flex flex-row space-x-5 mt-2 p-2 ">
+                    <button type="submit" class=" mx-2 inline-block bg-white text-purple-800 py-2 px-6 rounded-full font-semibold hover:bg-gray-200 hover:-translate-y-1 duration-200">Register</button>
+                    <button type="reset" class=" mx-2 inline-block bg-white text-purple-800 py-2 px-6 rounded-full font-semibold hover:bg-gray-200 hover:-translate-y-1 duration-200">Reset</button>
+                </div>
+              
+            </form>
+           
+          
+        </div>
+    </div>
+</main>

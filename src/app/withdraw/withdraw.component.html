@@ -1,0 +1,64 @@
+<app-header></app-header>
+<main>
+    <div class="bg-slate-300 p-4 ">
+        <ul class="flex flex-row space-x-2">
+            <li>
+                <a href="dashboard" class="hover:text-purple-800  hover:underline underline-offset-8 decoration-purple-800 cursor-pointer">Home</a>
+            </li>
+            <li>></li>
+            <li class="cursor-pointer">
+              Withdrawals
+            </li>
+        </ul>
+        
+    </div>
+    <h1 class="text-center font-semibold text-2xl mt-10">
+      Withdrawals
+    </h1>
+    <div class="grid grid-cols-2 bg-slate-200 p-20 m-20">
+        <div>
+            <img src="assets/images/deposit.jpg" alt="" width="500px" height="500px">
+        </div>
+      
+       
+        <form action="" class="ml-4">
+            <p class=" font-semibold"> 
+                Use the form to withdraw funds from your account
+            </p>
+            <label class="block ">
+                <span class="block text-sm font-medium text-slate-700">Account Number *</span>
+                <input type="number" class="peer w-[300px] p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" min="0" max="999" required/>
+                
+            </label>
+            <label class="block ">
+                <span class="block text-sm font-medium text-slate-700 mt-2">Amount *</span>
+                <input type="number" class="peer w-[300px] p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" />
+                <p class="invisible peer-invalid:visible text-pink-600 text-sm">
+                  Please provide a valid amount.
+                </p>
+            </label>
+           
+            <label class="block ">
+                <span class="block text-sm font-medium text-slate-700 mt-1">Password *</span>
+                <input type="password" class="peer w-[300px] p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" maxlength="8" minlength="4"/>
+                <p class=" invisible peer-invalid:visible text-pink-600 text-sm">
+                  Password must be 8 characters long and have one special character.
+                </p>
+            </label>
+            <label class="block">
+                <span class="block text-sm font-medium text-slate-700">Confrim Password *</span>
+                <input type="password" class="peer w-[300px] p-4 mt-4 rounded-lg outline-none focus:border border-purple-800" maxlength="8" minlength="4" />
+                <p class=" invisible peer-invalid:visible text-pink-600 text-sm">
+                    Password must be 8 characters long and have one special character.
+                </p>
+            </label>
+            <div class="flex flex-row space-x-5 mt-2 p-2 ">
+                <button type="submit" class="text-gray-200 bg-purple-600 py-2 px-4 rounded-full hover:bg-purple-800 hover:-translate-y-1 duration-200" onclick="alert(Successful)">Confirm</button>
+                <button type="reset" class="text-gray-200 bg-purple-600 py-2 px-4 rounded-full hover:bg-purple-800 hover:-translate-y-1 duration-200">Reset</button>
+            </div>
+          
+        </form>
+       
+    </div>
+</main>
+<app-footer></app-footer>
